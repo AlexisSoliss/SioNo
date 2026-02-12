@@ -1,28 +1,65 @@
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.contenedor{
-    background: cadetblue;
-    width: 100vw;
+body {
+    /* Un degradado bonito en lugar de un color plano */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Para que el botón no se salga de la pantalla al huir */
+}
+
+.contenedor {
     text-align: center;
+    width: 100%;
 }
 
-p{
-    font-size: xx-large;
-    padding: 15%;
+p {
+    /* Usamos la fuente cursiva para el texto */
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: #d63384; /* Color rosa fuerte */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
-button{
-    font-size: xx-large;
-    padding: 0.75em;
+button {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px; /* Bordes redondos */
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
-#yesBtn{
-    transform: translate(-100%,0);
+#yesBtn {
+    background-color: #ff4757;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
 }
 
-#noBtn{
-    position: absolute;
+#yesBtn:hover {
+    transform: scale(1.1); /* Efecto de crecer al pasar el mouse */
+}
+
+#noBtn {
+    background-color: white;
+    color: #ff4757;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: absolute; /* Importante para que se mueva libremente */
+}
+
+img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-top: 20px;
 }
